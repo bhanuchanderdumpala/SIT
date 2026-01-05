@@ -1,0 +1,23 @@
+# Eclipse / IDE
+.metadata/
+.settings/
+bin/
+out/
+
+# Compiled files
+*.class
+
+# Test reports
+test-output/
+
+# Libraries & archives
+*.jar
+*.zip
+selenium-java-*/
+
+# Documents
+*.pdf
+
+# Logs
+*.log
+*.pma
