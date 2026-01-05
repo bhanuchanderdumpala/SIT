@@ -1,23 +1,7 @@
-# Eclipse / IDE
-.metadata/
-.settings/
-bin/
-out/
+# Local frameworks / practice
+Batch63/Frmk_Batch63/
+Batch63/Project01_HRMS/
+Batch63/run_selenium_smoke.bat
 
-# Compiled files
-*.class
-
-# Test reports
-test-output/
-
-# Libraries & archives
-*.jar
-*.zip
-selenium-java-*/
-
-# Documents
-*.pdf
-
-# Logs
-*.log
-*.pma
+# Source archives
+apache-log4j-*/
