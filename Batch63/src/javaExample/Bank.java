@@ -1,14 +1,14 @@
 package javaExample;
+
 import java.util.Scanner;
 
-class Bank {
+public class Bank {
 
-    int balance = 100;
+    private int balance = 100;
 
     public void deposit(int amount) {
         balance += amount;
         System.out.println("Deposit successful: " + amount);
-        
         System.out.println("Updated Balance = " + balance);
     }
 
@@ -23,18 +23,16 @@ class Bank {
 
     public static void main(String[] args) {
         Bank b = new Bank();
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter amount to deposit: ");
-        int depositAmount = sc.nextInt();
-        
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter amount to deposit: ");
+            int depositAmount = sc.nextInt();
+            b.deposit(depositAmount);
 
-        b.deposit(depositAmount);
-        System.out.println("Deposit successful!");
-        System.out.println("Enter amount to Withdraw: ");
-        int withdrawAmount=sc.nextInt();
-        b.withdraw(withdrawAmount);
-        b.checkBalance();
-        
-        
+            System.out.print("Enter amount to Withdraw: ");
+            int withdrawAmount = sc.nextInt();
+            b.withdraw(withdrawAmount);
+
+            b.checkBalance();
+        }
     }
 }

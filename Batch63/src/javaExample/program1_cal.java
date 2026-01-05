@@ -1,7 +1,7 @@
 package javaExample;
 
 public class program1_cal {
-	public void add(int a, int b)
+	public static void add(int a, int b)
 	{
 		
 		int result=a+b;
@@ -25,6 +25,7 @@ public class program1_cal {
 	{
 		program1_cal addition=new program1_cal();
 		addition.add(10,20);
+		program1_cal.add(56,99);
 		addition.mul(10,20);
 		addition.sub(70,20);
 		
